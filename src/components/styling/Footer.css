@@ -1,0 +1,17 @@
+.footer {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    /* z-index: 1000; */
+    padding:  1%;
+    left: 0;
+    bottom: 0;
+    height: auto;  
+    text-align: center;
+}
+
+#contactLogos {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1%;
+}

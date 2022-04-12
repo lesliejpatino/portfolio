@@ -1,0 +1,40 @@
+.skills-section {
+    border: 3px solid black;
+    position: relative;
+    margin-bottom: 15rem;
+}
+
+.skills {
+    border: 3px solid black;
+    /* margin-left: 15%; */
+    max-height: 20rem;
+    /* background-color: white; */
+    z-index: 100%;
+    margin-top: 30%;
+}
+
+.skills, .all-skills, .tech-skills, ul, li {
+    background-color: white;
+    color: #001D13;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+    /* background-color: white; */
+
+}
+
+#skills-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#animation {
+    margin-top: 30%;
+    margin-left: 20%;
+}
+
+.resume-section {
+    margin-bottom: 8%;
+}

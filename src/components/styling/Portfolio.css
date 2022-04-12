@@ -1,0 +1,58 @@
+.card {
+    max-height: 25rem;
+    overflow: scroll;
+    box-shadow:#001D13;
+    
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.project-title {
+    border: 4px solid #4C7165;
+    background-color: #001D13;
+    margin: 0;
+    width: 100%;
+    font-size: 1.3rem;
+    color: black;
+}
+
+a:hover {
+    color: #4C7165;
+}
+.project-images {
+    max-width: 100%;
+    opacity: 70%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.project-images:hover {
+    opacity: 100%;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+
+.project-desc {
+    list-style-type: none;
+}
+
+li, .strong {
+    background-color: white;
+}
+
+
+
+
+
+/* TEAL: 
+#4C7165
+
+DARK GREEN/GRAY: #001D13 */
+
+#repo-link {
+    height: 2rem;
+    width: 2 rem;
+}

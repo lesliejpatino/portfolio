@@ -1,17 +1,11 @@
-.footer {
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    /* z-index: 1000; */
-    padding:  1%;
-    left: 0;
-    bottom: 0;
-    height: auto;  
-    text-align: center;
+footer, h4, h5, p, a {
+    background-color: #001D13;
+    color: white;
 }
 
-#contactLogos {
-    height: 3rem;
-    width: 3rem;
+.contact-logos {
+    height: 2.7rem;
+    width: 2.7rem;
     margin-right: 1%;
+    background-color: #001D13
 }

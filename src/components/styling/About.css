@@ -9,7 +9,23 @@ a {
     text-decoration: none;
 }
 
-.arrow{
+.home-div {
+    margin: 0 auto;
+}
+
+.quote {
+    border: none;
+    border-style: none;
+} 
+
+.quote-by {
+    background-color: #A0C8BB;
+}
+
+
+
+
+/* .arrow{
     position: absolute;
     left: 50%;
 
@@ -42,4 +58,4 @@ a {
         opacity: 0;
         transform: rotate(45deg) translate(20px,20px);
     }
-}
+} */

@@ -1,23 +1,21 @@
 import React from "react";
 import "./styling/Nav.css";
 
+
 function Nav({ currentPage, handlePageChange }) {
-  // const style = {
-  //   link {
-  //     color: "white",
-  //   }
-  // }
+    
+  
   return (
     <>
       <div className="container-fluid">
 
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container-fluid the-navbar">
             <ul className='navbar-nav name'>
 
               <li className='nav-item'>
                 <a href='#about' onClick={() => handlePageChange('About')}
-                  className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                  className={currentPage === 'About' ? 'nav-link active' : 'nav-link active'}
                   id="my-name"
                 >
                   Leslie Patino
@@ -30,7 +28,6 @@ function Nav({ currentPage, handlePageChange }) {
               <li className='nav-item'>
                 <a href='#about' onClick={() => handlePageChange('About')}
                   className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} 
-                  // style={style.link}
                   id="about-link"
                   >
                   About Me

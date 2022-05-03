@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styling/About.css'
 
-export default function About() {
+export default function About(handlePageChange) {
     const helloBitmoji = process.env.PUBLIC_URL + '/assets/images/bitmoji.png';
 
     useEffect(() => {
@@ -17,7 +17,7 @@ export default function About() {
             <div className="col-12 my-5 py-3" id="home-div">
                 <div className="col-lg-7 col-md-9 col-sm-10 my-5 py-5 text-center" id="hello">
                     <h1> Hi, I'm Leslie!</h1>
-                    <h2> Full Stack Web Developer </h2>
+                    <h2> Front End Web Developer </h2>
                     <img
                         src={helloBitmoji}
                         alt="my-bitmoji"
@@ -38,21 +38,14 @@ export default function About() {
                     Since then, I have acquired a plethora of technical skills and have also learned patience, adaptability, and the true meaning of a growth mindset.
                     <br />
 
-                    Please stick around to view my portfolio and learn more about my current skill set and experience.
+                    Stick around and checkout my 
+                    <a className="about-links" href="https://lesliejpatino.github.io/portfolio/#portfolio"> portfolio </a>
+                    & learn more about my 
+                    <a className="about-links" href="https://lesliejpatino.github.io/portfolio/#resume"> current skill set and experience. </a>
                 </div>
             </div>
 
         </>
-
-
-        // <div
-        //     className="text-center quote mb-5 pb-5"
-        //     id="hello"
-        //     data-aos="zoom-in"
-        //     data-aos-duration="1300">
-        //     <h3> "The way we do one thing is the way we do everything." </h3>
-        //     <h4 className="quote-by"> <em> - Iyanla Vanzant</em> </h4>
-        // </div> 
     )
 };
 

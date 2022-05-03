@@ -15,7 +15,7 @@ export default function Footer() {
                 Leslie Patino
             </h4>
             <p className="footer-text">
-                Full Stack Web Developer
+                Front End Web Developer
             </p>
 
             <p className="footer-text">

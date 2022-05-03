@@ -9,8 +9,9 @@ a {
     text-decoration: none;
 }
 
-.home-div {
+#home-div {
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 .quote {

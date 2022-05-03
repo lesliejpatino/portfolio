@@ -1,8 +1,12 @@
+.projects {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
 .card {
     max-height: 25rem;
     overflow: scroll;
     box-shadow:#001D13;
-    
 }
 
 a:link {
@@ -48,3 +52,4 @@ a:link {
     margin: 0 auto;
     text-align: center;
 }
+

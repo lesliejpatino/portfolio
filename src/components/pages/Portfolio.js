@@ -12,7 +12,9 @@ export default function Portfolio() {
     const ignite = process.env.PUBLIC_URL + '/assets/images/ignite.png';
     const dream = process.env.PUBLIC_URL + '/assets/images/dream-team.png';
     const pwdGenerator = process.env.PUBLIC_URL + '/assets/images/pwdgen-site.png';
-    const scheduler = process.env.PUBLIC_URL + '/assets/images/sched-site.png';
+    const adviceBot = process.env.PUBLIC_URL + '/assets/images/advicebot.png';
+
+    // const scheduler = process.env.PUBLIC_URL + '/assets/images/sched-site.png';
 
 
     return (
@@ -24,7 +26,7 @@ export default function Portfolio() {
             <div className="col-7 my-5 portfolio-intro">
                 <h1>Welcome to my portfolio!</h1>
                 <p>
-                    The projects below were built using the MERN Stack. Each project includes a description, my role and responsibilities, and the technology stack used. Additionally, the github repo is linked for each project and the live site can be accessed (when applicable) by clicking on the project title.
+                    The projects below were built using the MERN Stack. Each project includes a description, my role & responsibilities if it wasn't a solo effort, and the technology stack used. Additionally, the github repo is linked for each project and the deployed site can be accessed (when applicable) by clicking on the project title.
                 </p>
             </div>
 
@@ -144,7 +146,42 @@ export default function Portfolio() {
 
 
                 {/* <div className="row mb-5 "> */}
+
                 {/* Card 4 */}
+                <div className="card col-lg-3 col-md-5 col-sm-8 mx-4 mb-5 p-0" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
+                    <a
+                        href="https://lesliejpatino.github.io/advice-bot/"
+                        rel="noreferrer"
+                        target="_blank"
+                        className="text-center project-title text-white p-2">
+                        Advice-Bot
+                    </a>
+
+                    <img className="project-images" src={adviceBot} alt="notes site" />
+
+                    <ul className="project-desc p-3">
+                        <li className="bg-white">
+                        This single page application uses the Advice Slip API to fetch random pieces of advice and display them to the user. The user will find that at times Advice-Bot may offer a few words of wisdom, and other times it will simply provide a quick laugh.                        
+                        </li>
+                        <hr />
+                        <li className="bg-white"> <strong className="bg-white">Tech Stack:</strong>
+                            Advice Slip API, Javascript, Bootstrap, CSS, HTML
+                        </li>
+                        <li className="bg-white text-center mt-3">
+                            <a
+                                href="https://github.com/lesliejpatino/advice-bot"
+                                rel="noreferrer"
+                                target="_blank"
+                                className="github-repo bg-white">
+                                <FontAwesomeIcon className="fa-xl bg-white" icon={faGithub} />
+                                <br />
+                                View GitHub Repo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Card 5 */}
                 <div className="card col-lg-3 col-md-5 col-sm-8 mx-4 mb-5 p-0" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
                     <a
                         href="https://obscure-waters-08324.herokuapp.com/"
@@ -178,7 +215,7 @@ export default function Portfolio() {
                     </ul>
                 </div>
 
-                {/* Card 5 */}
+                {/* Card 6 */}
                 <div className="card col-lg-3 col-md-5 col-sm-8 mx-4 mb-5 p-0" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">                    <a
                     href="https://lesliejpatino.github.io/Password-Generator/"
                     rel="noreferrer"
@@ -211,7 +248,7 @@ export default function Portfolio() {
                 </div>
 
                 {/* Card 6 */}
-                <div className="card col-lg-3 col-md-5 col-sm-8 mx-4 mb-5 p-0" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">                    <a
+                {/* <div className="card col-lg-3 col-md-5 col-sm-8 mx-4 mb-5 p-0" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">                    <a
                     href="https://lesliejpatino.github.io/Schedule-Your-Workday/"
                     rel="noreferrer"
                     target="_blank"
@@ -241,7 +278,7 @@ export default function Portfolio() {
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> */}
 
             </div>
         </>

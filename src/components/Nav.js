@@ -4,7 +4,6 @@ import "./styling/Nav.css";
 
 function Nav({ currentPage, handlePageChange }) {
     
-  
   return (
     <>
       <div className="container-fluid">
@@ -37,7 +36,6 @@ function Nav({ currentPage, handlePageChange }) {
               <li className='nav-item'>
                 <a href='#portfolio' onClick={() => handlePageChange('Portfolio')}
                   className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-                  // style={style.link}
                   id="portfolio-link"
                   >
                   Portfolio
@@ -47,7 +45,6 @@ function Nav({ currentPage, handlePageChange }) {
               <li className='nav-item'>
                 <a href='#resume' onClick={() => handlePageChange('Resume')}
                   className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-                  // style={style.link}
                   id="resume-link"
                   >
                   Resume

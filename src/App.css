@@ -1,38 +1,14 @@
 * {
-  background-color:#A0C8BB;
-  color: #001D13
+  color: #001D13;
+  background-color: rgb(248, 234, 215);
+  font-family: 'Comfortaa', cursive;
 }
 
 /* 
-og resume color:
-#6C9286
-
-tan: #ce8559
-BRIGHT SHADES:
-
-Mint Greenish: 
-#A0C8BB 
-
-mint green but brighter:
-#C7FCEB
-
-purple: 
-#AF99FF
-*/
-
-
-/* 
-darker shades:
-LIGHT BLUEISH: 
-#D2FBEE
-
-TEAL: 
-#4C7165
-
-DARK GREEN/GRAY: #001D13
-
-PASTEL LIGHT BLUE: 
-#BCE4D7
-
-
+Royal Blue: #2f5a8d 
+Maroon: #611e00
+Nude: #ce987b
+font-family: 'Abril Fatface', cursive;
+font-family: 'Comfortaa', cursive; 
+font-family: 'Playfair Display', serif;
 */

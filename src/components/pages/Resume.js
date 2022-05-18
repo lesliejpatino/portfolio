@@ -6,9 +6,8 @@ import { faVolleyball, faFilePen, faDumbbell, faFileLines, faAt } from '@fortawe
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Resume() {
-    const headshot = process.env.PUBLIC_URL + '/assets/images/headshot.png';
+    const headshot = process.env.PUBLIC_URL + '/assets/images/headshot.jpg';
     const resumePdf = process.env.PUBLIC_URL + '/assets/Resume.pdf'
-
 
     return (
         <>
@@ -17,47 +16,67 @@ export default function Resume() {
             <div className="resume-body m-5 py-5">
 
                 <div className="col-8 resume-intro text-center">
-                        <h3 className="mt-4">Front end developer, leader, and events director <br /> based in Las Vegas, NV.</h3>
-                        <img
+                    <h3 className="mt-4 res-header">
+                        Front end developer, leader, and events director <br /> based in Las Vegas, NV.
+                    </h3>
+                    <img
                         src={headshot}
                         alt="my headshot"
                         id="headshot"
                         className="mt-2"
                         height="200px"
-                        width="200px"
+                        width="160px"
                     />
                     <br />
                     <div className="mt-2">
 
-                    <a href="https://www.linkedin.com/in/lesliejpatino/" rel="noreferrer" target="_blank" >
-                    <FontAwesomeIcon className="p-3 fa-lg" icon={faLinkedin} /> 
-                    </a>
+                        <a href="https://www.linkedin.com/in/lesliejpatino/" rel="noreferrer" target="_blank" >
+                            <FontAwesomeIcon className="p-3 fa-lg" icon={faLinkedin} />
+                        </a>
 
-                    <a href="mailto:lesliejpatino@gmail.com" rel="noreferrer" target="_blank" >
-                    <FontAwesomeIcon className="p-3 fa-lg" icon={faAt} /> 
-                    </a>
-                    
-                    <a href={resumePdf} rel="noreferrer" target="_blank" >
-                    <FontAwesomeIcon className="p-3 fa-lg" icon={faFileLines} /> 
-                    </a>
+                        <a href="mailto:lesliejpatino@gmail.com" rel="noreferrer" target="_blank" >
+                            <FontAwesomeIcon className="p-3 fa-lg" icon={faAt} />
+                        </a>
+
+                        <a href={resumePdf} rel="noreferrer" target="_blank" >
+                            <FontAwesomeIcon className="p-3 fa-lg" icon={faFileLines} />
+                        </a>
 
                     </div>
-                    </div>
+                </div>
+
 
                 <div className="col-lg-7 col-md-10 col-sm-9 my-5 experience">
+                    {/* Education */}
                     <div className="row" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
-                        <h3 className="mt-4">Education</h3>
+                        <h3 className="mt-4 res-header">
+                            Education
+                        </h3>
                         <a href="https://www.parchment.com/u/award/43e60f093755f2032677e3c70afaf78f" rel="noreferrer" target="_blank">
-                        <p>University of California Berkeley Extension - Full Stack Web Development Bootcamp</p>
+                            <p>University of California Berkeley Extension - Full Stack Web Development Bootcamp</p>
                         </a>
                     </div>
                     <hr />
 
-                    <div className="row" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500"> 
-                        <h3 className="mt-4">Technical Skills</h3>
+                    {/* Currently Seeking */}
+                    <div className="row" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
+                        <h3 className="mt-4 res-header">
+                            Currently Seeking Roles
+                        </h3>
+                        <p>
+                            Front-End Developer, Front-End Engineer, Software Engineer, Full-Stack Developer, Full-Stack Engineer
+                        </p>
+                    </div>
+                    <hr />
+
+                    {/* Technical Skills */}
+                    <div className="row" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
+                        <h3 className="mt-4 mb-2 res-header">
+                            Technical Skills
+                        </h3>
 
                         <div className="col-lg-4 col-md-4">
-                            <h5>Front End</h5>
+                            <p className='tech-skills my-1'>Front-End</p>
                             <ul className="skills-list">
                                 <li>React</li>
                                 <li>Javascript</li>
@@ -71,7 +90,7 @@ export default function Resume() {
                         </div>
 
                         <div className="col-lg-4 col-md-4">
-                            <h5>Back End</h5>
+                            <p className='tech-skills my-1'>Back-End</p>
                             <ul className="skills-list">
                                 <li>Node</li>
                                 <li>Express</li>
@@ -83,7 +102,7 @@ export default function Resume() {
                         </div>
 
                         <div className="col-lg-4 col-md-4">
-                            <h5>Other</h5>
+                            <p className='tech-skills my-1'>Other</p>
                             <ul className="skills-list">
                                 <li>Microsoft Office</li>
                                 <li>Canva</li>
@@ -96,8 +115,11 @@ export default function Resume() {
                     </div>
                     <hr />
 
+                    {/* Other Skills */}
                     <div className="row" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
-                        <h3 className="mt-4">Other Skills</h3>
+                        <h3 className="mt-4 res-header">
+                            Other Skills
+                        </h3>
                         <div className="col-lg-4 col-md-4">
                             <ul className="skills-list">
                                 <li>Fluent in English & Spanish</li>
@@ -125,9 +147,11 @@ export default function Resume() {
                     </div>
                     <hr />
 
-                    {/* EXPERIENCE */}
+                    {/* Experience */}
                     <div className="row" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
-                        <h3 className="mt-4">Experience</h3>
+                        <h3 className="mt-4 res-header">
+                            Experience
+                        </h3>
                         <div className="col-lg-4 col-md-4">
                             <ul className="jobs">
                                 <li className="job-title">Digital Content Specialist</li>
@@ -179,16 +203,17 @@ export default function Resume() {
                         </div>
                     </div>
                     <hr />
-
-
+                    {/* Extra */}
                     <div className="row" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
-                    <h3 className="mt-4">Also Busy With</h3>
+                        <h3 className="mt-4 res-header">
+                            Also Busy With
+                        </h3>
                         <div className="col-lg-4 col-md-4">
                             <ul className="jobs">
                                 <li className="job-title">Beach Volleyball <FontAwesomeIcon icon={faVolleyball} /> </li>
-                                
 
-                                </ul>
+
+                            </ul>
                         </div>
 
                         <div className="col-lg-4 col-md-4">
@@ -204,8 +229,8 @@ export default function Resume() {
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
-            </>
-            )
+        </>
+    )
 }

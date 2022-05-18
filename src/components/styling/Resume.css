@@ -1,17 +1,27 @@
-.skills-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.jobs {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.job-title {
-    font-weight: bold;
+.resume-body {
+    position: relative;
+    min-height: 100vh;
 }
 
 .resume-intro, .experience, #headshot {
     margin: 0 auto;
+}
+
+#headshot {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 5px 4px 4px #5e6b7a;
+}
+
+.skills-list, .jobs {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.res-header, .job-title {
+    font-weight: bold;
+}
+
+.tech-skills {
+    text-decoration: underline;
 }
